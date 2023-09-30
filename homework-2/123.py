@@ -17,8 +17,11 @@ class Channel:
         self.url = f'https://www.youtube.com/channel/{self.__channel_id}'
 
         # создать специальный объект для работы с API
+
         self.__title = Channel.get_service().channels().list(id=self.__channel_id, part='snippet,statistics').execute()["items"][0]['snippet']['title']
         self.__video_count = Channel.get_service().channels().list(id=channel_id, part='snippet,statistics').execute()["items"][0]["statistics"]['videoCount']
+        #self.e = self.__youtube.channels().list(id=self.__channel_id, part='snippet,statistics').execute()["items"][0]['snippet']
+
     def print_info(self) -> None:
         """Выводит в консоль информацию о канале.
         Выводит словарь в json-подобном удобном формате с отступами"""
@@ -44,9 +47,7 @@ class Channel:
     def get_service(cls):
         return build('youtube', 'v3', developerKey=os.getenv('YT_API_KEY'))
 
-    def to_json(self, path):
-        channel_id = 'UC-OVMPlMA3-YCIeg4z5z23A'  # MoscowPython
-        # channel_id = 'UCwHL6WHUarjGfUM_586me8w'  # HighLoad Channel
-        channel = Channel.get_service().channels().list(id=channel_id, part='snippet,statistics').execute()
-        with open(path, 'w') as f:
-            f.write(json.dumps(channel, indent=2, ensure_ascii=False))
+
+ex1 = Channel('UC-OVMPlMA3-YCIeg4z5z23A')
+
+ex1.print_info()
