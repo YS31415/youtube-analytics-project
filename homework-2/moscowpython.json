@@ -1,49 +1,9 @@
 {
-  "kind": "youtube#channelListResponse",
-  "etag": "LigBxfp3smO2rT7Vt9Nwe2eTJtg",
-  "pageInfo": {
-    "totalResults": 1,
-    "resultsPerPage": 5
-  },
-  "items": [
-    {
-      "kind": "youtube#channel",
-      "etag": "0BH3Hj4fWPFRtbTT6xGU2w00PS4",
-      "id": "UC-OVMPlMA3-YCIeg4z5z23A",
-      "snippet": {
-        "title": "MoscowPython",
-        "description": "Видеозаписи со встреч питонистов и джангистов в Москве и не только. :)\nПрисоединяйтесь: https://www.facebook.com/groups/MoscowDjango! :)",
-        "customUrl": "@moscowdjangoru",
-        "publishedAt": "2012-07-13T09:48:44Z",
-        "thumbnails": {
-          "default": {
-            "url": "https://yt3.ggpht.com/ytc/APkrFKaVrRJTNkDjSnvpVAYDqbQ5S1VMHWaZhOauk5M10Q=s88-c-k-c0x00ffffff-no-rj",
-            "width": 88,
-            "height": 88
-          },
-          "medium": {
-            "url": "https://yt3.ggpht.com/ytc/APkrFKaVrRJTNkDjSnvpVAYDqbQ5S1VMHWaZhOauk5M10Q=s240-c-k-c0x00ffffff-no-rj",
-            "width": 240,
-            "height": 240
-          },
-          "high": {
-            "url": "https://yt3.ggpht.com/ytc/APkrFKaVrRJTNkDjSnvpVAYDqbQ5S1VMHWaZhOauk5M10Q=s800-c-k-c0x00ffffff-no-rj",
-            "width": 800,
-            "height": 800
-          }
-        },
-        "localized": {
-          "title": "MoscowPython",
-          "description": "Видеозаписи со встреч питонистов и джангистов в Москве и не только. :)\nПрисоединяйтесь: https://www.facebook.com/groups/MoscowDjango! :)"
-        },
-        "country": "RU"
-      },
-      "statistics": {
-        "viewCount": "2422953",
-        "subscriberCount": "26500",
-        "hiddenSubscriberCount": false,
-        "videoCount": "708"
-      }
-    }
-  ]
+  "channel_id": "UC-OVMPlMA3-YCIeg4z5z23A",
+  "channel_title": "MoscowPython",
+  "channel_desc": "Р’РёРґРµРѕР·Р°РїРёСЃРё СЃРѕ РІСЃС‚СЂРµС‡ РїРёС‚РѕРЅРёСЃС‚РѕРІ Рё РґР¶Р°РЅРіРёСЃС‚РѕРІ РІ РњРѕСЃРєРІРµ Рё РЅРµ С‚РѕР»СЊРєРѕ. :)\nРџСЂРёСЃРѕРµРґРёРЅСЏР№С‚РµСЃСЊ: https://www.facebook.com/groups/MoscowDjango! :)",
+  "url": "https://www.youtube.com/channel/UC-OVMPlMA3-YCIeg4z5z23A",
+  "subs_coutn": "26500",
+  "video_count": "708",
+  "channel_vives": "2424727"
 }
