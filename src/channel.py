@@ -18,7 +18,9 @@ class Channel:
         self.subs_coutn = self.channel_info["items"][0]["statistics"]["subscriberCount"]
         self.video_count = self.channel_info["items"][0]["statistics"]['videoCount']
         self.channel_vives = self.channel_info["items"][0]["statistics"]["viewCount"]
-        # создать специальный объект для работы с API
+
+    def __str__(self):
+        return self.url #(https://www.youtube.com/channel/UC-OVMPlMA3-YCIeg4z5z23A)'
 
     def print_info(self) -> None:
         """Выводит в консоль информацию о канале.
@@ -50,3 +52,28 @@ class Channel:
                 'channel_vives': self.channel_vives}
         with open(file_name, 'w', encoding='UTF-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
+
+    def __add__(self, other):
+        return int(self.subs_coutn) + int(other.subs_coutn)
+
+    def __sub__(self, other):
+        return int(self.subs_coutn) - int(other.subs_coutn)
+
+    def __gt__(self, other):
+        return int(self.subs_coutn) > int(other.subs_coutn)
+
+    def __ge__(self, other):
+        return int(self.subs_coutn) >= int(other.subs_coutn)
+
+    def __lt__(self, other):
+        return int(self.subs_coutn) < int(other.subs_coutn)
+
+    def __le__(self, other):
+        return int(self.subs_coutn) <= int(other.subs_coutn)
+
+    def __eq__(self, other):
+        return int(self.subs_coutn) == int(other.subs_coutn)
+
+
+
+
